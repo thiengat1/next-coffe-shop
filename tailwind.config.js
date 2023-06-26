@@ -14,7 +14,12 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       colors: {
-        'light-coffee': '#C89F94',
+        coffee: {
+          50: '#E8D6D0',
+          200: '#C89F94',
+          400: '#A25F4B',
+          600: '#744838',
+        },
       },
       keyframes: {
         slideDown: {
@@ -24,6 +29,9 @@ module.exports = {
       },
       animation: {
         slideDown: 'slideDown 0.5s ease-in-out',
+      },
+      backgroundImage: {
+        slider: "url('/assets/slider-bg.jpeg')",
       },
     },
   },
