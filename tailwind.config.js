@@ -26,12 +26,21 @@ module.exports = {
           '0%': { transform: 'translateY(-100%)' },
           '100%': { transform: 'translateY(0)' },
         },
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
       },
       animation: {
         slideDown: 'slideDown 0.5s ease-in-out',
+        fadeIn: 'fadeIn .6s ease-in-out',
       },
       backgroundImage: {
         slider: "url('/assets/slider-bg.jpeg')",
+        'magazine-1': "url('/assets/magazine-image-01.jpeg')",
+        'magazine-2': "url('/assets/magazine-image-02.jpeg')",
+        'magazine-3': "url('/assets/magazine-image-03.jpeg')",
+        'parallax-1': "url('/assets/bg-parallax-01.jpeg')",
       },
     },
   },

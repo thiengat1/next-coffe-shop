@@ -3,6 +3,9 @@ import Header from '@/components/Header';
 import Slider from '@/components/MainContent/Slider';
 import Story from '@/components/MainContent/Story';
 import Mugs from '@/components/MainContent/Mugs';
+import Products from '@/components/MainContent/Product';
+import Magazine from '@/components/MainContent/Magazine';
+import Parallax from '@/components/MainContent/Parallax';
 
 export default function Home() {
   return (
@@ -12,6 +15,13 @@ export default function Home() {
         <Slider />
         <Story />
         <Mugs />
+        <Products />
+        <Magazine />
+        <Parallax />
+        <div>3543543</div>
+        <div>3543543</div>
+        <div>3543543</div>
+        <div>3543543</div>
       </div>
     </main>
   );

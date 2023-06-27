@@ -4,7 +4,7 @@ export interface ISliderProps {}
 
 export default function Slider(props: ISliderProps) {
   return (
-    <div className='h-[530px] bg-slider bg-cover bg-no-repeat bg-bottom'>
+    <div className='h-[530px] bg-slider bg-cover bg-no-repeat bg-bottom rounded-sm overflow-hidden'>
       <div className='w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40'>
         <div className='mx-16 text-white text-center'>
           <div className=' uppercase mb-6'>Best play to buy coffee</div>

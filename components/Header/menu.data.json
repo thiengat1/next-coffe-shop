@@ -1,0 +1,8 @@
+[
+  { "id": 1, "name": "Home", "link": "#" },
+  { "id": 2, "name": "Products", "link": "#" },
+  { "id": 3, "name": "Blog", "link": "#" },
+  { "id": 4, "name": "About", "link": "#" },
+  { "id": 5, "name": "Contact", "link": "#" },
+  { "id": 6, "name": "StyleGuide", "link": "#" }
+]
