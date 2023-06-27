@@ -36,7 +36,7 @@ export default function CardItem({
                 hover:duration-300 hover:ease-in-out relative group'
           >
             {priceSale && (
-              <div className='absolute w-[100px] bg-white py-2 px-4 top-3 right-3 font-semibold text-coffee-400'>
+              <div className='absolute w-[100px] bg-white py-2 px-4 top-3 right-3 font-semibold text-coffee-400 rounded-sm'>
                 On sale
               </div>
             )}

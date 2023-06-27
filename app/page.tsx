@@ -6,6 +6,8 @@ import Mugs from '@/components/MainContent/Mugs';
 import Products from '@/components/MainContent/Product';
 import Magazine from '@/components/MainContent/Magazine';
 import Parallax from '@/components/MainContent/Parallax';
+import Stories from '@/components/MainContent/Stories';
+import Subscribe from '@/components/MainContent/Subscribe';
 
 export default function Home() {
   return (
@@ -18,10 +20,8 @@ export default function Home() {
         <Products />
         <Magazine />
         <Parallax />
-        <div>3543543</div>
-        <div>3543543</div>
-        <div>3543543</div>
-        <div>3543543</div>
+        <Stories />
+        <Subscribe />
       </div>
     </main>
   );
