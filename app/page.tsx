@@ -8,6 +8,7 @@ import Magazine from '@/components/MainContent/Magazine';
 import Parallax from '@/components/MainContent/Parallax';
 import Stories from '@/components/MainContent/Stories';
 import Subscribe from '@/components/MainContent/Subscribe';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <Stories />
         <Subscribe />
       </div>
+      <Footer />
     </main>
   );
 }
