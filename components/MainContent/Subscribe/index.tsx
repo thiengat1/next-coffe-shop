@@ -17,13 +17,15 @@ export default function Subscribe(props: ISubscribeProps) {
           <div className='h-px w-8 bg-gray-700'></div>
         </div>
         <div className='text-4xl mb-6'>Coffee Updates</div>
-        <div className='flex gap-4'>
+        <div className='flex gap-4 flex-col sm:flex-row text-center justify-center items-center'>
           <input
             type='email'
             placeholder='thiengat1@gmail.com'
             className='px-6 py-4 w-[350px] max-w-[80%] xs:max-w-full bg-inherit border-[1px] border-gray-700 outline-none text-white leading-5 hover:border-gray-300 duration-500 focus:border-gray-300 placeholder:uppercase placeholder:text-xs placeholder:tracking-widest placeholder:font-semibold'
           />
-          <div className='lewis-button bg-white text-gray-900'>Subscribe</div>
+          <div className='lewis-button bg-white text-gray-900 w-1/2 sm:w-max'>
+            Subscribe
+          </div>
         </div>
       </div>
     </div>
