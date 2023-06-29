@@ -1,31 +1,46 @@
 import * as React from 'react';
+import FeatureHeader from '../Common/FeatureHeader';
 
 export interface IStoryProps {}
 
 export default function Story(props: IStoryProps) {
   return (
-    <div className='flex justify-center items-center'>
-      <div className='px-4 sm:px-16 md:px-32 lg:px-64 xl:px-96 py-32 text-center'>
-        <div className='text-3xl mb-6 leading-10'>
-          Even the all-powerful Pointing has no control about the blind texts.
-        </div>
-        <div className='text-gray-500 mb-6 leading-8'>
-          It is a paradisematic country, in which roasted parts of sentences fly
-          into your mouth. Even the all-powerful Pointing has no control about
-          the blind texts it is an almost unorthographic life One day however a
-          small line of blind text by the name of Lorem Ipsum decided to leave
-          for the far World of Grammar.
-        </div>
-        <div>
-          <a
-            href='#'
-            className='text-coffee-400 hover:text-coffee-600 
+    <div>
+      <FeatureHeader label='OUR COFFEE STORY' />
+      <div className='w-[95%] lg:w-[65%] mx-auto'>
+        <div className='flex flex-col lg:flex-row justify-center items-center gap-12'>
+          <div className='h-[350px] basis-1/2'>
+            <video
+              src='/assets/videos/coffee-video.mp4'
+              autoPlay
+              muted
+              loop
+              className='w-full h-full min-h-[350px] object-cover rounded-md'
+            />
+          </div>
+          <div className='basis-1/2'>
+            <div className='text-3xl mb-6 leading-10'>
+              What is your most special coffee?
+            </div>
+            <div className='text-gray-500 mb-6 leading-8'>
+              The French Press is a brewing method that comes closest to
+              cupping. Cupping is the prescribed method by which coffee should
+              be judged. Nothing separates the water from the coffee. To
+              properly discover the flavours, it is best to drink the coffee
+              this way. Everyone has their favourite brewing method.
+            </div>
+            <div>
+              <a
+                href='#'
+                className='text-coffee-400 hover:text-coffee-600 
               relative after:absolute after:-bottom-2 after:left-0 
             after:bg-coffee-50 hover:after:bg-coffee-200  
             after:h-0.5 after:w-full after:transition-all after:ease-in-out after:duration-400'
-          >
-            Read the full Story
-          </a>
+              >
+                Read the full Story
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
