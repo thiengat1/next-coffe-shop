@@ -4,8 +4,8 @@ import { useSpring, animated } from '@react-spring/web';
 export interface IUseCommonProps {}
 
 export default function UseCommon(props?: IUseCommonProps) {
-  const infoRef = useRef(null);
-  const itemRef = useRef(null);
+  const infoRef = useRef<any>(null);
+  const itemRef = useRef<any>(null);
   const [infoVisible, setInfoVisible] = useState(false);
   const [itemVisible, setItemVisible] = useState(false);
   const infoAnimated = useSpring({
