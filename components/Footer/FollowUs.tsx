@@ -4,10 +4,26 @@ export interface IFollowUsProps {}
 
 export default function FollowUs(props: IFollowUsProps) {
   const socials = [
-    { id: 1, name: 'Facebook', link: 'https://www.facebook.com/' },
-    { id: 2, name: 'Instagram', link: 'https://www.facebook.com/' },
-    { id: 3, name: 'Pinterest', link: 'https://www.facebook.com/' },
-    { id: 4, name: 'Twitter', link: 'https://www.facebook.com/' },
+    {
+      id: 1,
+      name: 'Facebook',
+      link: 'https://www.facebook.com/thien.nguyenvan.353/',
+    },
+    {
+      id: 2,
+      name: 'Instagram',
+      link: 'https://www.facebook.com/thien.nguyenvan.353/',
+    },
+    {
+      id: 3,
+      name: 'Pinterest',
+      link: 'https://www.facebook.com/thien.nguyenvan.353/',
+    },
+    {
+      id: 4,
+      name: 'Twitter',
+      link: 'https://www.facebook.com/thien.nguyenvan.353/',
+    },
   ];
   return (
     <div className='basis-1/6'>
@@ -16,13 +32,15 @@ export default function FollowUs(props: IFollowUsProps) {
       </div>
       <ul>
         {socials.map((item) => {
-          const { id, name } = item;
+          const { id, name, link } = item;
           return (
             <li
               className='mb-4 text-gray-500 hover:text-coffee-400 cursor-pointer'
               key={id}
             >
-              {name}
+              <a href={link} target='_blank'>
+                {name}
+              </a>
             </li>
           );
         })}

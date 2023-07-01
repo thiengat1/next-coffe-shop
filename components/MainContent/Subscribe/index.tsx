@@ -1,10 +1,19 @@
-import * as React from 'react';
+import useCommon from '@/hooks/useCommon';
+import { useEffect } from 'react';
 
 export interface ISubscribeProps {}
 
 export default function Subscribe(props: ISubscribeProps) {
+  const { infoAnimated, handleScroll, infoRef, animated } = useCommon();
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => handleScroll(false));
+    return () => {
+      window.removeEventListener('scroll', () => handleScroll(false));
+    };
+  }, []);
   return (
-    <div className='mb-24'>
+    <animated.div style={infoAnimated} ref={infoRef} className='mb-24'>
       <div
         className='w-[95%] h-[350px] mx-auto bg-gray-800 rounded-md 
       text-white text-center flex justify-center items-center flex-col'
@@ -28,6 +37,6 @@ export default function Subscribe(props: ISubscribeProps) {
           </div>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 }

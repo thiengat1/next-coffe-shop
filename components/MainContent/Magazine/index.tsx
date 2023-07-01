@@ -1,11 +1,20 @@
-import * as React from 'react';
 import FeatureHeader from '../Common/FeatureHeader';
+import useCommon from '@/hooks/useCommon';
+import { useEffect } from 'react';
 
 export interface IMagazineProps {}
 
 export default function Magazine(props: IMagazineProps) {
+  const { infoAnimated, handleScroll, infoRef, animated } = useCommon();
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => handleScroll(false));
+    return () => {
+      window.removeEventListener('scroll', () => handleScroll(false));
+    };
+  }, []);
   return (
-    <div>
+    <animated.div style={infoAnimated} ref={infoRef}>
       <FeatureHeader label='Buy 2 mugs and get a coffee magazine free' />
       <div className='w-[95%] lg:w-[65%] mx-auto mb-24 h-full'>
         <div className='flex flex-col md:flex-row w-full h-full justify-center items-center gap-5'>
@@ -31,6 +40,6 @@ export default function Magazine(props: IMagazineProps) {
           </div>
         </div>
       </div>
-    </div>
+    </animated.div>
   );
 }

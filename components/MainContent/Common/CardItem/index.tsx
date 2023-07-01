@@ -14,8 +14,6 @@ export default function CardItem({
   price,
   priceSale,
 }: ICardItemProps) {
-  console.log('image', image);
-
   return (
     <div>
       <div
