@@ -8,6 +8,10 @@ export default function Story(props: IStoryProps) {
   const { infoAnimated, handleScroll, infoRef, animated } = useCommon();
 
   useEffect(() => {
+    const { innerHeight } = window;
+    if (innerHeight > 1000) {
+      handleScroll(false);
+    }
     window.addEventListener('scroll', () => handleScroll(false));
     return () => {
       window.removeEventListener('scroll', () => handleScroll(false));

@@ -18,6 +18,11 @@ export default function Mugs(props: IMugsProps) {
   } = useCommon();
 
   useEffect(() => {
+    const { innerHeight } = window;
+    if (innerHeight > 1500) {
+      handleScroll(false);
+      handleScroll(true);
+    }
     window.addEventListener('scroll', () => handleScroll(false));
     return () => {
       window.removeEventListener('scroll', () => handleScroll(false));

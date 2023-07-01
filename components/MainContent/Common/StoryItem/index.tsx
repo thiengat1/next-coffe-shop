@@ -14,8 +14,6 @@ export default function StoryItem({
   shortContent,
   time,
 }: IStoryItemProps) {
-  console.log('image', image);
-
   return (
     <div>
       <div
