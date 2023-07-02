@@ -20,7 +20,7 @@ export default function Footer(props: IFooterProps) {
     <animated.div
       style={infoAnimated}
       ref={infoRef}
-      className='w-[90%] mx-auto mb-24'
+      className='w-[90%] mx-auto pb-8'
     >
       <div className='flex justify-center gap-8 flex-col lg:flex-row text-center lg:text-left lg:justify-evenly'>
         <CoffeeStyle />

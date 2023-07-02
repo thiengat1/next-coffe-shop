@@ -23,7 +23,7 @@ export default function Home() {
       {isLoading ? (
         <Loading onComplete={handleOnComplete} />
       ) : (
-        <div className='max-w-[1440px] mx-auto px-8'>
+        <div className='max-w-[1440px] mx-auto px-8 mb-8'>
           <Header />
           <div>
             <Slider />
