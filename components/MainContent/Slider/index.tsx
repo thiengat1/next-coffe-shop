@@ -25,7 +25,7 @@ export default function Slider(props: ISliderProps) {
           <div className='flex justify-center'>
             <div
               className=' uppercase bg-white text-gray-900 text-sm 
-            tracking-wider w-max font-medium py-4 px-6 cursor-pointer hover:bg-opacity-95'
+            tracking-wider w-max font-medium py-4 px-6 cursor-pointer hover:bg-opacity-95 rounded-md'
             >
               Explore Out Products
             </div>
