@@ -12,6 +12,7 @@ import Subscribe from '@/components/MainContent/Subscribe';
 import Footer from '@/components/Footer';
 import Loading from '@/components/Loading';
 import { useState } from 'react';
+import BackTop from '@/components/BackTop';
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,6 +36,7 @@ export default function Home() {
             <Stories />
             <Subscribe />
           </div>
+          <BackTop />
           <Footer />
         </div>
       )}
